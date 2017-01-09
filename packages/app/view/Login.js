@@ -1,0 +1,39 @@
+/**
+ * Created by x on 2016/10/19.
+ */
+Ext.define('myApp.view.Login',{
+    extend:'Ext.Panel',
+    xtype:'login',
+    config:{
+        id:'pagea',
+        style:'background-color:pink',
+        fullscreen:true,
+        items:[
+            {
+                xtype:'fieldset',
+                title:'欢迎登录',
+                instructions:'请输入用户信息',
+                items:[
+                    {
+                        id:'userName',
+                        label:'用户名',
+                        xtype:'textfield',
+                        placeholder:'请输入用户名'
+                    },
+                    {
+                        id:'userPassword',
+                        label:'密码',
+                        xtype:'passwordfield',
+                        placeholder:'请输入密码'
+                    }
+                ]
+            },
+            {
+                    id:'btnLogin',
+                    xtype:'button',
+                    width:120,
+                    text:'登录'
+            }
+        ]
+    }
+});
